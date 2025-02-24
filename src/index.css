@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+td:last-child {
+  white-space: nowrap;
+}
