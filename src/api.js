@@ -27,7 +27,7 @@ export const buscarConvenios = async (filtros) => {
 // Função para criar um novo paciente
 export const criarPaciente = async (dadosPaciente) => {
   try {
-    const response = await fetch(`${API_URL}/pacientes`, {
+    const response = await fetch(`${API_URL}/pacientes/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -50,7 +50,7 @@ export const criarPaciente = async (dadosPaciente) => {
 // Função para obter todos os pacientes
 export const obterPacientes = async () => {
   try {
-    const response = await fetch(`${API_URL}/pacientes`, {
+    const response = await fetch(`${API_URL}/pacientes/`, {
       method: "GET",
     });
 
